@@ -18,7 +18,11 @@ if (process.env.NODE_ENV === "production") {
 }
 
 // ROUTES
+//authentication
 
+
+
+//todo
 // get all todos
 app.get("/todos", async (req, res) => {
   try {
