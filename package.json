@@ -18,6 +18,7 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-basic-auth": "^1.2.0",
-    "pg": "^8.0.3"
+    "pg": "^8.0.3",
+    "tachyons": "^4.12.0"
   }
 }
