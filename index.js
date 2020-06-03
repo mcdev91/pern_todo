@@ -1,4 +1,13 @@
 const express = require("express");
+
+//
+const bodyParser = require('body-parser');
+const bcrypt = require('bcrypt-nodejs');
+const register = require('./controllers/register');
+const signin = require('./controllers/signin');
+const profile = require('./controllers/profile');
+//
+
 const app = express();
 const cors = require("cors");
 const pool = require("./db");
@@ -7,9 +16,17 @@ const PORT = process.env.PORT || 5000;
 
 // process.env.NODE_ENV => production or undefined
 
+//
+pool.query("SELECT * FROM users").then(data =>{});
+//
+
 // middleware
 app.use(cors());
 app.use(express.json()); // req.body
+
+//
+app.use(bodyParser.json());
+//
 
 if (process.env.NODE_ENV === "production") {
   // service static content
@@ -18,9 +35,13 @@ if (process.env.NODE_ENV === "production") {
 }
 
 // ROUTES
+//
 //authentication
-
-
+app.get('/', (req, res) => { res.send('It is working') })
+app.post('/signin', signin.handleSignIn(db, bcrypt))
+app.post('/register', (req, res) => { register.handleRegister(req, res, db, bcrypt) })
+app.get('/profile/:id', (req, res) => { profile.handleProfileGet(req, res, db) })
+//
 
 //todo
 // get all todos
