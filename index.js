@@ -17,7 +17,8 @@ const PORT = process.env.PORT || 5000;
 // process.env.NODE_ENV => production or undefined
 
 //
-pool.query("SELECT * FROM users").then(data => { });
+const db = process.env.DATABASE_URL;
+db.query("SELECT * FROM users").then(data => { });
 //
 
 // middleware
@@ -38,9 +39,9 @@ if (process.env.NODE_ENV === "production") {
 //
 //authentication
 app.get('/', (req, res) => { res.send('It is working') })
-app.post('/signin', signin.handleSignIn(pool, bcrypt))
-app.post('/register', (req, res) => { register.handleRegister(req, res, pool, bcrypt) })
-app.get('/profile/:id', (req, res) => { profile.handleProfileGet(req, res, pool) })
+app.post('/signin', signin.handleSignIn(db, bcrypt))
+app.post('/register', (req, res) => { register.handleRegister(req, res, db, bcrypt) })
+app.get('/profile/:id', (req, res) => { profile.handleProfileGet(req, res, db) })
 //
 
 //todo
