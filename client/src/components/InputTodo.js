@@ -13,7 +13,7 @@ const InputTodo = () => {
         body: JSON.stringify(body),
       });
 
-      window.location = reload();
+      window.location = "https://mcdevtodo.herokuapp.com/";
     } catch (err) {
       console.error(err.message);
     }
