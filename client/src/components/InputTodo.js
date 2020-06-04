@@ -1,7 +1,7 @@
 import React, { Fragment, useState } from "react";
 
 const InputTodo = () => {
-  const [description, setDescription] = useState("");
+  const [description, setDescription, loadUser] = useState("");
 
   const onSubmitForm = async (e) => {
     e.preventDefault();
@@ -13,7 +13,7 @@ const InputTodo = () => {
         body: JSON.stringify(body),
       });
 
-      window.location = "https://mcdevtodo.herokuapp.com/";
+      window.location = loadUser();
     } catch (err) {
       console.error(err.message);
     }

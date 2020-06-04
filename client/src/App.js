@@ -62,7 +62,7 @@ class App extends Component {
                 name={this.state.user.name}
                 id={this.state.user.id}
               />
-              <InputTodo />
+              <InputTodo loadUser={loadUser} />
               <ListTodos />
               <div className="cf-ns nl2 nr2">
 
