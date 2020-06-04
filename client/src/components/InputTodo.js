@@ -14,6 +14,7 @@ const InputTodo = () => {
       });
 
       window.location = loadUser();
+      refresh();
     } catch (err) {
       console.error(err.message);
     }
