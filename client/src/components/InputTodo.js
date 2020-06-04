@@ -1,7 +1,7 @@
 import React, { Fragment, useState } from "react";
 
 const InputTodo = () => {
-  const [description, setDescription, loadUser] = useState("");
+  const [description, setDescription] = useState("");
 
   const onSubmitForm = async (e) => {
     e.preventDefault();
@@ -13,8 +13,7 @@ const InputTodo = () => {
         body: JSON.stringify(body),
       });
 
-      window.location = loadUser();
-      refresh();
+      window.location = "/";
     } catch (err) {
       console.error(err.message);
     }
