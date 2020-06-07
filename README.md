@@ -1,1 +1,1 @@
-# pern_todo
+# pirkinių sąrašas
