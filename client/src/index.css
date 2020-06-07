@@ -5,7 +5,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(30, 156, 114);
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+table {
   color: white;
 }
 
