@@ -26,7 +26,7 @@ const EditTodo = ({ todo }) => {
         data-toggle="modal"
         data-target={`#id${todo.todo_id}`}
       >
-        Edit
+        Pataisyti
       </button>
       <div
         className="modal"
@@ -63,7 +63,7 @@ const EditTodo = ({ todo }) => {
                 data-dismiss="modal"
                 onClick={() => editText(todo.todo_id)}
               >
-                Edit
+                Pataisyti
               </button>
               <button
                 type="button"
@@ -71,7 +71,7 @@ const EditTodo = ({ todo }) => {
                 data-dismiss="modal"
                 onClick={() => setDescription(todo.description)}
               >
-                Close
+                Uždaryti
               </button>
             </div>
           </div>

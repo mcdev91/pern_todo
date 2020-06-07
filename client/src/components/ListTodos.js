@@ -33,9 +33,9 @@ const ListTodos = () => {
       <table className="table mt-5">
         <thead>
           <tr>
-            <th>Description</th>
-            <th>Edit</th>
-            <th>Delete</th>
+            <th>Prekė</th>
+            <th>Pataisyti</th>
+            <th>Ištrinti</th>
           </tr>
         </thead>
         <tbody>
@@ -50,7 +50,7 @@ const ListTodos = () => {
                   className="btn btn-danger"
                   onClick={() => deleteTodo(todo.todo_id)}
                 >
-                  Delete
+                  Ištrinti
                 </button>
               </td>
             </tr>
