@@ -18,7 +18,7 @@ class App extends Component {
       const password = prompt('prisijunkite');
       if (password === 'family') {
         alert('start your shop list');
-      } else { getData() }
+      } else { this.getData() }
       this.setState({
         data: 'Hello McDev'
       })
