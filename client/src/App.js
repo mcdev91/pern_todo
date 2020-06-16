@@ -15,11 +15,13 @@ class App extends Component {
 
   getData() {
     setTimeout(() => {
-      console.log('Our data is fetched');
+      const password = prompt('prisijunkite');
+      if (password === 'family') {
+        alert('start your shop list');
+      } else { getData() }
       this.setState({
         data: 'Hello McDev'
       })
-      console.log(this.data);
     }, 1000)
   }
 
