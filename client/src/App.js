@@ -31,7 +31,7 @@ class App extends Component {
   }
 
   todoList() {
-    render() {
+    render() 
       return (
         <Fragment>
           <div className="container">
@@ -40,7 +40,6 @@ class App extends Component {
           </div>
         </Fragment>
       );
-    }
   }
 }
 
