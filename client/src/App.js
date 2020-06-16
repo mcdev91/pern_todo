@@ -18,6 +18,7 @@ class App extends Component {
       const password = prompt('prisijunkite');
       if (password === 'family') {
         alert('start your shop list');
+        this.todoList()
       } else { this.getData() }
       this.setState({
         data: 'Hello McDev'
@@ -29,15 +30,17 @@ class App extends Component {
     this.getData();
   }
 
-  render() {
-    return (
-      <Fragment>
-        <div className="container">
-          <InputTodo />
-          <ListTodos />
-        </div>
-      </Fragment>
-    );
+  todoList() {
+    render() {
+      return (
+        <Fragment>
+          <div className="container">
+            <InputTodo />
+            <ListTodos />
+          </div>
+        </Fragment>
+      );
+    }
   }
 }
 
