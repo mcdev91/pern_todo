@@ -6,7 +6,6 @@ import InputTodo from "./components/InputTodo";
 import ListTodos from "./components/ListTodos";
 
 class App extends Component {
-
   constructor(props) {
     super(props);
     this.state = {
@@ -37,7 +36,7 @@ class App extends Component {
       </Fragment>
     );
   }
-
+}
 
 // function App() {
 //   return (
