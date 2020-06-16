@@ -19,7 +19,7 @@ class App extends Component {
       this.setState({
         data: 'Hello McDev'
       })
-      console.log(data);
+      console.log(this.data);
     }, 1000)
   }
 
