@@ -13,34 +13,33 @@ class App extends Component {
     }
   }
 
-  getData() {
-    setTimeout(() => {
-      const password = prompt('prisijunkite');
-      if (password === 'family') {
-        alert('start your shop list');
-        this.todoList()
-      } else { this.getData() }
-      this.setState({
-        data: 'Hello McDev'
-      })
-    }, 1000)
+  // getData() {
+  //   setTimeout(() => {
+  //     const password = prompt('prisijunkite');
+  //     if (password === 'family') {
+  //       alert('start your shop list');
+  //     } else { this.getData() }
+  //     this.setState({
+  //       data: 'Hello McDev'
+  //     })
+  //   }, 1000)
+  // }
+
+  // componentDidMount() {
+  //   this.getData();
+  // }
+
+  render() {
+    return (
+      <Fragment>
+        <div className="container">
+          <InputTodo />
+          <ListTodos />
+        </div>
+      </Fragment>
+    );
   }
 
-  componentDidMount() {
-    this.getData();
-  }
-
-  todoList() {
-    render() 
-      return (
-        <Fragment>
-          <div className="container">
-            <InputTodo />
-            <ListTodos />
-          </div>
-        </Fragment>
-      );
-  }
 }
 
 // function App() {
