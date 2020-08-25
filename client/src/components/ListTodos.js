@@ -41,17 +41,25 @@ const ListTodos = () => {
         <tbody>
           {todos.map((todo) => (
             <tr key={todo.todo_id}>
-              <td>{todo.description}</td>
               <td>
-                <EditTodo todo={todo} />
-              </td>
-              <td>
+                {todo.description}
                 <button
                   className="btn btn-danger"
                   onClick={() => deleteTodo(todo.todo_id)}
                 >
-                  Ištrinti
+                  X
                 </button>
+              </td>
+              <td>
+                <EditTodo todo={todo} />
+              </td>
+              <td>
+                {/* <button
+                  className="btn btn-danger"
+                  onClick={() => deleteTodo(todo.todo_id)}
+                >
+                  Ištrinti
+                </button> */}
               </td>
             </tr>
           ))}
