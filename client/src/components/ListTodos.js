@@ -31,25 +31,19 @@ const ListTodos = () => {
     <Fragment>
       {" "}
       <table className="table mt-5">
-        <thead>
-          <tr>
-            <th>Prekė</th>
-            <th>Pataisyti</th>
-          </tr>
-        </thead>
         <tbody>
           {todos.map((todo) => (
             <tr key={todo.todo_id}>
               <td>
                 {todo.description}
+              </td>
+              <td>
                 <button
                   className="btn btn-danger"
                   onClick={() => deleteTodo(todo.todo_id)}
                 >
                   X
                 </button>
-              </td>
-              <td>
                 <EditTodo todo={todo} />
               </td>
             </tr>
