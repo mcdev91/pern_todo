@@ -38,21 +38,13 @@ const ListTodos = () => {
                 {todo.description}
               </td>
               <td>
-                {/* <button
+                <button
                   className="btn btn-danger"
                   onClick={() => deleteTodo(todo.todo_id)}
                 >
                   X
-                </button> */}
-
-                <img
-                  src={require=('./icons/delete.png')}
-                  style={{
-                    height: '25px', width: '25px'
-                  }}
-                  onClick={() => deleteTodo(todo.todo_id)}
-                />
-
+                </button>
+                <br />
                 <EditTodo todo={todo} />
               </td>
             </tr>
