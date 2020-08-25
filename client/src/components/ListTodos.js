@@ -1,6 +1,5 @@
 import React, { Fragment, useState, useEffect } from "react";
 import EditTodo from "./EditTodo";
-import delIcon from './icons/delete.png'
 
 const ListTodos = () => {
   const [todos, setTodos] = useState([]);
@@ -47,7 +46,7 @@ const ListTodos = () => {
                 </button> */}
 
                 <img
-                  src={<delIcon />}
+                  src={require=('./icons/delete.png')}
                   style={{
                     height: '25px', width: '25px'
                   }}
