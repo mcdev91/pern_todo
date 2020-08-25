@@ -35,7 +35,6 @@ const ListTodos = () => {
           <tr>
             <th>Prekė</th>
             <th>Pataisyti</th>
-            <th>Ištrinti</th>
           </tr>
         </thead>
         <tbody>
@@ -52,14 +51,6 @@ const ListTodos = () => {
               </td>
               <td>
                 <EditTodo todo={todo} />
-              </td>
-              <td>
-                {/* <button
-                  className="btn btn-danger"
-                  onClick={() => deleteTodo(todo.todo_id)}
-                >
-                  Ištrinti
-                </button> */}
               </td>
             </tr>
           ))}
