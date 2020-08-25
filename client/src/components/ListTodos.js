@@ -1,6 +1,5 @@
 import React, { Fragment, useState, useEffect } from "react";
 import EditTodo from "./EditTodo";
-import DelIcon from './icons/delete.png';
 
 const ListTodos = () => {
   const [todos, setTodos] = useState([]);
@@ -40,10 +39,10 @@ const ListTodos = () => {
               </td>
               <td>
                 <button
-                  className="btn"
+                  className="btn btn-danger"
                   onClick={() => deleteTodo(todo.todo_id)}
                 >
-                  <DelIcon />
+                  X
                 </button>
                 <EditTodo todo={todo} />
               </td>
