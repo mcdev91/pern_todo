@@ -20,8 +20,3 @@ button:active {
 button:focus {
     outline: 0;
 }
-
-.cell {
-    vertical-align: middle;
-    display: table-cell;
-}

@@ -38,7 +38,7 @@ const ListTodos = () => {
       <table className="table mt-5">
         <tbody>
           {todos.map((todo) => (
-            <tr className='cell' key={todo.todo_id}>
+            <tr key={todo.todo_id}>
               <td>
                 {todo.description}
               </td>
