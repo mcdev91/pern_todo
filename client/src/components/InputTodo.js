@@ -25,11 +25,10 @@ const InputTodo = () => {
   };
   return (
     <Fragment>
-      <h1 className="text-center my-5">Sąrašas</h1>
       <form className="d-flex" onSubmit={onSubmitForm}>
         <input
           type="text"
-          placeholder="Pridėti į sąrašą"
+          placeholder="Pridėti"
           className="form-control"
           value={description}
           onChange={(e) => setDescription(e.target.value)}
