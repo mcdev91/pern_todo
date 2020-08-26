@@ -25,6 +25,7 @@ const InputTodo = () => {
   };
   return (
     <Fragment>
+      <br />
       <form className="d-flex" onSubmit={onSubmitForm}>
         <input
           type="text"
