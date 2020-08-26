@@ -1,4 +1,7 @@
 import React, { Fragment, useState } from "react";
+import { faEdit } from '@fortawesome/free-solid-svg-icons'
+
+const editIcon = <FontAwesomeIcon icon={faEdit} />
 
 const EditTodo = ({ todo }) => {
   const [description, setDescription] = useState(todo.description);
@@ -20,14 +23,27 @@ const EditTodo = ({ todo }) => {
 
   return (
     <Fragment>
-      <button
+
+
+      {/* <button
         type="button"
         className="btn btn-warning"
         data-toggle="modal"
         data-target={`#id${todo.todo_id}`}
       >
         Pataisyti
-      </button>
+      </button> */}
+
+      <div
+        type="button"
+        className='fa-3x'
+        data-toggle="modal"
+        data-target={`#id${todo.todo_id}`}
+      >
+        {editIcon}
+      </div>
+
+
       <div
         className="modal"
         id={`id${todo.todo_id}`}
