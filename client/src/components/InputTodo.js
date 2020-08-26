@@ -1,4 +1,8 @@
 import React, { Fragment, useState } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPlus } from '@fortawesome/free-solid-svg-icons'
+
+const addIcon = <FontAwesomeIcon icon={faPlus} />
 
 const InputTodo = () => {
   const [description, setDescription] = useState("");
@@ -29,7 +33,12 @@ const InputTodo = () => {
           value={description}
           onChange={(e) => setDescription(e.target.value)}
         />
-        <button className="btn btn-success">Pridėti</button>
+        <button
+          style={{
+            backgroundColor: 'none',
+            border: 'none'
+          }}
+        >{addIcon}</button>
       </form>
     </Fragment>
   );
