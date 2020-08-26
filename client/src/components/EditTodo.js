@@ -39,9 +39,11 @@ const EditTodo = ({ todo }) => {
         className='fa-3x'
         data-toggle="modal"
         data-target={`#id${todo.todo_id}`}
+        onClick={alert('clicked')}
       >
         {editIcon}
       </div>
+
 
 
       <div
