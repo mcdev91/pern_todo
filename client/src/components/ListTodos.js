@@ -48,6 +48,8 @@ const ListTodos = () => {
                 >
                   {trashIcon}
                 </div>
+              </td>
+              <td>
                 <EditTodo todo={todo} />
               </td>
             </tr>
