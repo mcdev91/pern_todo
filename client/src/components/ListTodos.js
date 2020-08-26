@@ -1,5 +1,9 @@
 import React, { Fragment, useState, useEffect } from "react";
 import EditTodo from "./EditTodo";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTrashAlt } from '@fortawesome/free-solid-svg-icons'
+
+const trashIcon = <FontAwesomeIcon icon={faTrashAlt} />
 
 const ListTodos = () => {
   const [todos, setTodos] = useState([]);
@@ -38,13 +42,12 @@ const ListTodos = () => {
                 {todo.description}
               </td>
               <td>
-                <button
-                  className="btn btn-danger"
+                <div
+                  className='fa-3x'
                   onClick={() => deleteTodo(todo.todo_id)}
                 >
-                  X
-                </button>
-                <br />
+                  {trashIcon}
+                </div>
                 <EditTodo todo={todo} />
               </td>
             </tr>
