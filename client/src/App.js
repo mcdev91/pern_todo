@@ -9,6 +9,7 @@ class App extends Component {
     return (
       <Fragment>
         <div className="container">
+          <h1 labas />
           <InputTodo />
           <ListTodos />
         </div>
