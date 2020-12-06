@@ -11,6 +11,7 @@ body {
 
 .table {
   color: white;
+  border: none;
 }
 
 code {
