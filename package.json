@@ -9,8 +9,7 @@
   },
   "scripts": {
     "start": "node index.js",
-    "heroku-postbuild": "cd client && npm install && npm run build",
-    "build": "react-scripts build"
+    "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "author": "McDev",
   "license": "ISC",
@@ -25,7 +24,6 @@
     "express": "^4.17.1",
     "express-basic-auth": "^1.2.0",
     "heroku": "^7.43.0",
-    "pg": "^8.0.3",
-    "react-scripts": "^3.4.3"
+    "pg": "^8.0.3"
   }
 }
