@@ -28,10 +28,11 @@ input {
 .table td,
 .table th {
     padding: .75rem;
+    border-top: none!important;
 }
 
 .svg-inline--fa {
     font-size: 30px;
     text-transform: uppercase;
-    vertical-align: center!important;
+    vertical-align: sub!important;
 }
