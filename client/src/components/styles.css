@@ -24,3 +24,12 @@ button:focus {
 input {
     outline: none;
 }
+
+.table td,
+.table th {
+    padding: .75rem;
+}
+
+.svg-inline--fa {
+    font-size: 25px;
+}
