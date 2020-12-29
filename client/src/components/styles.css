@@ -31,5 +31,7 @@ input {
 }
 
 .svg-inline--fa {
-    font-size: 25px;
+    font-size: 30px;
+    text-transform: uppercase;
+    vertical-align: center!important;
 }
