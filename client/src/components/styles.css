@@ -29,8 +29,9 @@ input {
 .table th {
     padding: .75rem;
     border-top: 2px solid white;
-    vertical-align: middle!important;
+    vertical-align: middle !important;
     text-transform: uppercase;
+    font-size: 25px;
 }
 
 .svg-inline--fa {
@@ -39,4 +40,9 @@ input {
 
 .fa-3x {
     font-size: 30px;
+}
+
+.form-control {
+    height: 50px;
+    font-size: 20px;
 }
