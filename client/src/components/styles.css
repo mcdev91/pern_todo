@@ -28,7 +28,6 @@ input {
 .table td,
 .table th {
     padding: .75rem;
-    border-top: 2px solid white;
     vertical-align: middle !important;
     text-transform: uppercase;
     font-size: 25px;
